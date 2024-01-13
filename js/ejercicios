@@ -1,0 +1,90 @@
+//1.
+let numero1=prompt("Ingrese el primer numero: ")
+let numero2=prompt("Ingrese el segundo numero: ")
+let opcion=prompt("Ingrese una opcion: 1. Sumar<br> 2. Restar<br> 3. Multiplicar<br> 4. Dividir ")
+
+switch(opcion){
+    case 1:
+        document.writeln(suma)
+        console.log(suma)
+        break
+    case 2:
+        document.writeln(resta)
+        console.log(resta)
+        break
+    case 3:
+        document.writeln(multi)
+        console.log(multi)
+        break
+    case 4:
+        document.writeln(dividir)
+        console.log(dividir)
+        break  
+
+}
+
+function suma(numero1, numero2){
+    let suma=numero1+numero2
+    return suma
+}
+
+function resta(numero1, numero2){
+    let resta=numero1-numero2
+    return resta
+}
+
+function multi(numero1, numero2){
+    let multiplicar=numero1*numero2
+    return multiplicar
+}
+
+function dividir(numero1, numero2){
+    let dividir=numero1/numero2
+    return dividir
+}
+
+
+//2.
+let calif1=prompt("Ingrese la primera calificacion: ")
+let calif2=prompt("Ingrese la segunda calificacion: ")
+let calif3=prompt("Ingrese la tercera calificacion: ")
+
+function promedio(calif1, calif2, calif3){
+    let promedio=calif1+calif2+calif3/3
+    if(promedio<=6){
+        document.writeln("Suspendido")
+    }else if(promedio>=7){
+        document.writeln("Aprobado")
+    }
+
+    return promedio
+}
+
+document.writeln(`Su calificacion es: ${promedio}`)
+
+//3.
+let precio=parseFloat(prompt("Ingrese el precio del producto: "))
+
+function calcularPrecio(precio){
+    let iva=0.12
+    let precioTotal=precio+(precio*iva)
+
+    return precioTotal
+}
+
+document.writeln(`El precio final es ${calcularPrecio(precio)}`)
+
+//4.
+let auto=prompt("Ingrese el vehiculo: ")
+
+if(auto=="Ford fiesta"){
+    descuento = 5
+}else if(auto=="Ford focus"){
+    descuento = 10
+}
+
+document.writeln(`El descuento por la compra del vehiculo es ${descuento}%`)
+
+
+
+
